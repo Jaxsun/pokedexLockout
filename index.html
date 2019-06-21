@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8" />
         <title>Pokedex Lockout Prototype</title>
-        <link href="index.css" rel="stylesheet" type="text/css" />       
+        <link href="index.css" rel="stylesheet" type="text/css" />
         <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script src="js/adapter.js"></script>
         <script src="js/main.js"></script>
@@ -11,21 +11,36 @@
     </head>
     <body>
         <div id="instructions" class="instructions">
-            THIS IS A PROTOTYPE, EXPECT BUGGINESS<br>
-            Since I'm not running a server or anything for this you have to set up the connection yourselves<br>
-            It's pretty easy though, one of you just picks "Initiate Connection", and the other picks "Join Connection"<br>
-            Then just do what it says, you'll need to send the connection info to each other via some sort of messaging like Discord<br><br>
+            THIS IS A PROTOTYPE, EXPECT BUGGINESS<br />
+            Since I'm not running a server or anything for this you have to set
+            up the connection yourselves<br />
+            It's pretty easy though, one of you just picks "Initiate
+            Connection", and the other picks "Join Connection"<br />
+            Then just do what it says, you'll need to send the connection info
+            to each other via some sort of messaging like Discord<br /><br />
         </div>
         <div id="start-settings">
-            <span class='head'>Settings:</span><br>
-            Pokemon per row: <input id="poke-per-row" type="number" value="16" min="8" max="160">
+            <span class="head">Settings:</span><br />
+            Pokemon per row:
+            <input
+                id="poke-per-row"
+                type="number"
+                value="16"
+                min="8"
+                max="160"
+            />
         </div>
-        <div id="setup">
-            <button id="initiate-connection">Initiate Connection</button> <button id="join-connection">Join Connection</button>
+        <div id="setup-1">
+            <button id="initiate-connection-1">Initiate Connection 1</button>
+            <button id="join-connection-1">Join Connection 1</button>
+        </div>
+        <div id="setup-2">
+            <button id="initiate-connection-2">Initiate Connection 2</button>
+            <button id="join-connection-2">Join Connection 2</button>
         </div>
         <div id="board" style="display:none">
             <h3>Pokèdex Lockout (prototype)</h3>
         </div>
-        <div id="sync-cover"></div>
+        <!-- <div id="sync-cover"></div> -->
     </body>
 </html>

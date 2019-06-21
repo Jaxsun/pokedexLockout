@@ -1,12 +1,12 @@
 .instructions {
-    font-size:80%;
-    color:#963535;
+    font-size: 80%;
+    color: #963535;
 }
 
 #start-settings {
     display: inline-block;
-    color:#222;
-    font-size:90%;
+    color: #222;
+    font-size: 90%;
     margin-bottom: 20px;
 
     padding: 0.5em;
@@ -22,7 +22,7 @@
     width: 26px;
     height: 26px;
     display: inline-block;
-    border:solid 3px #fff;
+    border: solid 3px #fff;
     vertical-align: middle;
 }
 
@@ -40,7 +40,8 @@
 .square-thing.color1:hover {
     background-color: #fbb;
 }
-.square-thing.color1.chosen,.square-thing.color1.chosen:hover {
+.square-thing.color1.chosen,
+.square-thing.color1.chosen:hover {
     background-color: #f66;
 }
 
@@ -50,12 +51,24 @@
 .square-thing.color2:hover {
     background-color: #bbf;
 }
-.square-thing.color2.chosen,.square-thing.color2.chosen:hover {
+.square-thing.color2.chosen,
+.square-thing.color2.chosen:hover {
     background-color: #66f;
 }
 
+.square-thing.color3 {
+    background-color: #d3ffe9;
+}
+.square-thing.color3:hover {
+    background-color: rgb(195, 255, 187);
+}
+.square-thing.color3.chosen,
+.square-thing.color3.chosen:hover {
+    background-color: rgb(73, 187, 73);
+}
+
 .text-color1 {
-    text-align:center;
+    text-align: center;
     color: #b22;
 
     font-weight: bold;
@@ -63,10 +76,11 @@
 .text-color1 div {
     position: relative;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
+
 .text-color2 {
-    text-align:center;
+    text-align: center;
     color: #22b;
 
     font-weight: bold;
@@ -74,7 +88,19 @@
 .text-color2 div {
     position: relative;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
+}
+
+.text-color3 {
+    text-align: center;
+    color: #219c58;
+
+    font-weight: bold;
+}
+.text-color3 div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .poke-img {
@@ -107,76 +133,39 @@
     background-color: #bbf;
 }
 
-/* Marking for local reference */
-.poke.marked {
-    background: repeating-linear-gradient(
-        45deg,
-        #222, #222 6.25%,
-        #fff 6.25%, #fff 18.75%,
-        #222 18.75%, #222 25%
-    );
+.poke.color3 {
+    background-color: #5ec08f;
 }
-.poke.marked:hover {
-    background: repeating-linear-gradient(
-        45deg,
-        #777, #777 6.25%,
-        #eee 6.25%, #eee 18.75%,
-        #777 18.75%, #777 25%
-    );
+.poke.color3:hover {
+    background-color: #b6ddc2;
 }
 
-.poke.marked.color1 {
-    background: repeating-linear-gradient(
-        45deg,
-        #222, #222 6.25%,
-        #f66 6.25%, #f66 18.75%,
-        #222 18.75%, #222 25%
-    );
-}
-.poke.marked.color1:hover {
-    background: repeating-linear-gradient(
-        45deg,
-        #777, #777 6.25%,
-        #fbb 6.25%, #fbb 18.75%,
-        #777 18.75%, #777 25%
-    );
-}
-
-.poke.marked.color2 {
-    background: repeating-linear-gradient(
-        45deg,
-        #222, #222 6.25%,
-        #66f 6.25%, #66f 18.75%,
-        #222 18.75%, #222 25%
-    );
-}
-.poke.marked.color2:hover {
-    background: repeating-linear-gradient(
-        45deg,
-        #777, #777 6.25%,
-        #bbf 6.25%, #bbf 18.75%,
-        #777 18.75%, #777 25%
-    );
-}
-/* END Marking for local reference */
-
-
-#connection-status.good {
+#connection1-status.good {
     background: url(img/ok.png);
 }
-#connection-status.warning {
+#connection1-status.warning {
     background: url(img/warning.png);
 }
-#connection-status.bad {
+#connection1-status.bad {
+    background: url(img/bad.png);
+}
+
+#connection2-status.good {
+    background: url(img/ok.png);
+}
+#connection2-status.warning {
+    background: url(img/warning.png);
+}
+#connection2-status.bad {
     background: url(img/bad.png);
 }
 
 #sync-cover {
-    display:none;
-    position:fixed;
-    height:100vh;
-    width:100vw;
-    top:0;
-    left:0;
-    background:rgba(0, 0, 0, 0.03);
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.03);
 }
